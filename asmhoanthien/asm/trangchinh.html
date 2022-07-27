@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+      
+    </style>
+</head>
+<body ng-app = "asm" background="Asm-TaiNguyen/images/conthobay.gif ">
+    <div class="container">
+        <div>
+            <img width="100%" src="Asm-TaiNguyen/images/conthobay.gif"  alt="" height="300px">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!--   -->
+                    <!-- <button class="navbar-toggler float-right" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#chude">
+                                FPT Polytechnic
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gioithieu">
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lienhe">
+                                Liên hệ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gopy">
+                                Góp ý
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quizz">
+                                Hỏi đáp
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-user"></i>
+                                Tài khoản
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="dangki.html">Đăng ký</a></li>
+                                <li><a class="dropdown-item" href="dangnhap.html">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="quenmatkhau.html">Quên mật khẩu</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                                <li><a class="dropdown-item " href="#capnhat">Cập nhật tài khoản</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row gx-0">
+            <article class="col-9" ng-view > 
+                <!-- <div class="row">
+                    <div class="col-3 mt-2">
+                        <div class="card border-dark">
+                            <a href="">
+                                <img src="Asm-TaiNguyen/images/vitdangyeu.gif" alt="" class="card-img-top">
+                            </a>
+                            <div class="card-footer broder-dark" style="text-align: center;">
+                                <a href="#" style="text-decoration: none; color: black;">Lập trình Android nâng cao</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mt-2">
+                        <div class="card border-dark">
+                            <a href="">
+                                <img src="Asm-TaiNguyen/images/vitdangyeu.gif" alt="" class="card-img-top">
+                            </a>
+                            <div class="card-footer broder-dark" style="text-align: center;">
+                                <a href="#" style="text-decoration: none; color: black;">Lập trình Android nâng cao</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mt-2">
+                        <div class="card border-dark">
+                            <a href="">
+                                <img src="Asm-TaiNguyen/images/vitdangyeu.gif" alt="" class="card-img-top">
+                            </a>
+                            <div class="card-footer broder-dark" style="text-align: center;">
+                                <a href="#" style="text-decoration: none; color: black;">lập trình ASP.NET </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mt-2">
+                        <div class="card border-dark">
+                            <a href="">
+                                <img src="Asm-TaiNguyen/images/vitdangyeu.gif" alt="" class="card-img-top">
+                            </a>
+                            <div class="card-footer broder-dark" style="text-align: center;">
+                                <a href="#" style="text-decoration: none; color: black;">Lập trình PHP</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mt-2">
+                        <div class="card border-dark">
+                            <a href="">
+                                <img src="Asm-TaiNguyen/images/vitdangyeu.gif" alt="" class="card-img-top">
+                            </a>
+                            <div class="card-footer broder-dark" style="text-align: center;">
+                                <a href="#" style="text-decoration: none; color: black;">Lập trình game 2D</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mt-2">
+                        <div class="card border-dark">
+                            <a href="">
+                                <img src="Asm-TaiNguyen/images/vitdangyeu.gif" alt="" class="card-img-top">
+                            </a>
+                            <div class="card-footer broder-dark" style="text-align: center;">
+                                <a href="#" style="text-decoration: none; color: black;">Điện toán đám mây</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-3 mt-2">
+                        <div class="card border-dark">
+                            <a href="">
+                                <img src="Asm-TaiNguyen/images/vitdangyeu.gif" alt="" class="card-img-top">
+                            </a>
+                            <div class="card-footer broder-dark" style="text-align: center;">
+                                <a href="#" style="text-decoration: none; color: black;">Kiểm thử và triển khai ứng dụng Android</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="  col-lg-3 col-sm-3   mt-2">
+                        <div class="card border-dark">
+                            <a href="">
+                                <img src="Asm-TaiNguyen/images/vitdangyeu.gif" alt="" class="card-img-top">
+                            </a>
+                            <div class="card-footer broder-dark" style="text-align: center;">
+                                <a href="#" style="text-decoration: none; color: black;">Lập trình Android cơ bản</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </article>
+            <aside class="col-lg-3 col-sm-3 gx-0 pt-2 ps-3">
+                <div class="list-group category">
+                    <li class="list-group-item fw-bold">
+                        <i class="fa-solid fa-bars-staggered mx-2"></i>
+                        DANH MỤC MÔN HỌC
+                    </li>
+                    <a class="list-group-item" href="">Lập trình Android nâng cao</a>
+                    <a class="list-group-item" href="">xây dựng trang Web</a>
+                    <a class="list-group-item" href="">Cơ sở dữ liệu</a>
+                    <a class="list-group-item" href="">Intemet Mraketing</a>
+                    <a class="list-group-item" href="">Lập trình hướng đối tượng Java</a>
+                    <a class="list-group-item" href="">Lập trình PHP</a>
+                    <a class="list-group-item" href="">Điện toán đám mây</a>
+                    <a class="list-group-item" href="">Lập trình Android cơ bản</a>
+                    <a class="list-group-item" href="">Lập trình game 2D</a>
+                    <a class="list-group-item" href="">Thiết kế giao diện trên Android</a>
+                    <a class="list-group-item" href="">Thiết kế web cho điện thoại di động</a>
+                    <a class="list-group-item" href="">lập trình ASP.NET </a>
+                </div>
+            </aside>
+        </div>
+            
+        <footer class="row">
+            <div class="list-group text-center pt-2 mt-3" >
+                <marquee behavior="" direction="">
+                    <h4 class="text-Light"></h4> </marquee>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/angularjs.min.js"></script>
+    <script src="../js/angular-route.js"></script>
+    <script src="./asm.js"></script>
+
+    <script>
+        const app = angular.module("asm",["ngRoute"])
+        app.config(function($routeProvider,$locationProvider){
+            $locationProvider.hashPrefix('')
+            $routeProvider 
+                .when("/gopy",{
+                    templateUrl: "gopy.html",
+                }).when("/chude",{
+                    templateUrl: "chude.html",
+                }).when("/lienhe",{
+                    templateUrl: "lienhe.html",
+                }).when("/dangki",{
+                    templateUrl: "dangki.html",
+                })
+                .when("/gioithieu",{
+                    templateUrl: "gioithieu.html",
+                })
+                .when("/quizz",{
+                    templateUrl: "quizz.html",
+                })
+                .when("/capnhat", {
+                    templateUrl: "capnhat.html",
+                    controller: "quanlysinhvien",
+                })
+                .otherwise({
+                    templateUrl: "chude.html",
+                })
+        })
+        app.controller('quanlysinhvien',quanlysinhvien)
+    </script>
+</body>
+</html>
